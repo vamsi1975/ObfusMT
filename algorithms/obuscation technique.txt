@@ -1,0 +1,12 @@
+1)Renaming Obfuscation: Involves altering method and variable names to meaningless or undecipherable labels, making the code harder to understand and reverse-engineer. 
+DIGITALGUARDIAN.COM
+
+2)Anonymization: The process of irreversibly removing or modifying personal identifiers from data sets, ensuring individuals cannot be identified, thus protecting privacy. 
+DREMIO
+
+3)Pseudonymization: Replaces sensitive data with artificial identifiers or pseudonyms, allowing data to be linked to the same individual without revealing their identity. 
+DREMIO
+
+4)Address Obfuscation: Techniques like Address Space Layout Randomization (ASLR) rearrange the memory address space to make it difficult for attackers to predict the location of specific processes or data, enhancing security.
+
+5)Objective-C Message Call and Metadata Obfuscation: Involves modifying or hiding metadata and symbols in Objective-C applications to protect against reverse engineering and unauthorized access to the codebase. 

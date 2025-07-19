@@ -1,0 +1,62 @@
+services:
+  gateway:
+    build: ./gateway
+    ports:
+      - "8000:8000"
+    depends_on:
+      - remove_comments_n_space
+      - var_func_name_mangling
+      - string_literal
+      - func_pointer_alias
+      - preserve_method_call
+      - restore_code
+      - base64
+
+
+  remove_comments_n_space:
+    build: ./obfuscation_methods/remove_comments_n_space
+    ports:
+      - "5001:5001"
+
+  var_func_name_mangling:
+    build: ./obfuscation_methods/var_func_name_mangling
+    ports:
+      - "5002:5002"
+
+
+  string_literal:
+    build: ./obfuscation_methods/string_literal
+    ports:
+      - "5003:5003"
+
+  func_pointer_alias:
+    build: ./obfuscation_methods/func_pointer_alias
+    ports:
+      - "5004:5004"
+
+  preserve_method_call:
+    build: ./obfuscation_methods/preserve_method_call
+    ports:
+      - "5005:5005"
+
+  base64:
+    build: ./obfuscation_methods/base64
+    ports:
+      - "5006:5006"
+
+  restore_code:
+    build: ./deobfuscation_methods/restore_code
+    ports:
+      - "6001:6001"
+
+  payload:
+    build: ./extreme/payload
+    ports:
+      - "7001:7001"
+
+  frontend:
+    image: nginx:alpine
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+    ports:
+      - "8080:80"

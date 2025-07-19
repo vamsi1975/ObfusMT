@@ -1,0 +1,5 @@
+Variable and function name mangling
+String encoding
+Control flow flattening
+Anti-debugging measure
+Using JavaScript Packers and Minification - eval() and Base64 encoding // JSFuck

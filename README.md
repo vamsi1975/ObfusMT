@@ -1,2 +1,2 @@
 # ObfusMT
-code obfuscation and deobfuscation
+A code Obfuscator/ De-obfuscator

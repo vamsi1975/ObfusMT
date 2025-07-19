@@ -1,0 +1,50 @@
+1. Code minification:-
+#remove all unnecessary spaces, newlines, and comments.
+
+2. Name obfuscation:-
+#Rename variables, functions, and classes to meaningless names.
+
+3. String encoding:-
+#Encode strings to make them unreadable.
+
+4. Control Flow obfuscation:-
+#Make flow control harder to follow.
+
+5. Macros and preprocessor Directives:-
+#Use macros to obscure code logic.
+
+6. Function pointers:-
+#use function pointers to hide execution flow
+
+7. Code Flattening:-
+# Replace loops and ifs with a state machine 
+
+
+8. Self-Modifying code:-
+# generate and execute code at runtime
+
+9. Junk code injection:-
+# add dead code that never executes
+
+10. Use packers:
+# usepacers like UPX
+
+11. Use templates to hide code:-
+# templates create complex code at compile time
+#also use function overloading with templates
+
+12. Fake code paths:-
+# add misleading conditions that never executes
+
+13. overloading:-
+#function and operator overloading to hide the real operation.
+
+14. bytecode :
+# convert logic to bytecode and interpret it dynamically
+
+
+
+
+
+
+
